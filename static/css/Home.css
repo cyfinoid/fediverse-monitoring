@@ -1,0 +1,135 @@
+ .u-section-1 {
+  background-image: linear-gradient(120deg, #77aad9, #8d0baf);
+}
+
+#sec-7b57 {
+  background: linear-gradient(-45deg, #c02525, black, #c02525, black);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+  text-align: left;
+  color: #fff;
+}
+
+#myPieChart {
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 303px;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 60px auto;
+}.u-section-2 .u-sheet-1 {
+  min-height: 1270px;
+}
+
+.u-section-2 .u-list-1 {
+  margin-bottom: 0;
+  margin-top: 13px;
+}
+
+.u-section-2 .u-repeater-1 {
+  grid-auto-columns: calc(50% - 5px);
+  grid-template-columns: repeat(2, calc(50% - 5px));
+  min-height: 375px;
+  grid-gap: 10px;
+}
+
+.u-section-2 .u-container-layout-1 {
+  padding: 10px;
+}
+
+.u-section-2 .u-container-layout-2 {
+  padding: 10px;
+}
+
+.u-section-2 .u-list-2 {
+  margin: 13px 0 0;
+}
+
+.u-section-2 .u-repeater-2 {
+  grid-auto-columns: calc(50% - 5px);
+  grid-template-columns: repeat(2, calc(50% - 5px));
+  min-height: 375px;
+  grid-gap: 10px;
+}
+
+.u-section-2 .u-container-layout-3 {
+  padding: 10px;
+}
+
+.u-section-2 .u-container-layout-4 {
+  padding: 10px;
+}
+
+.u-section-2 .u-group-1 {
+  min-height: 461px;
+  height: auto;
+  margin: 14px 0;
+}
+
+.u-section-2 .u-container-layout-5 {
+  padding: 30px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-repeater-1 {
+    min-height: 309px;
+  }
+
+  .u-section-2 .u-list-2 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+
+  .u-section-2 .u-repeater-2 {
+    min-height: 309px;
+  }
+
+  .u-section-2 .u-group-1 {
+    margin-right: initial;
+    margin-left: initial;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-2 .u-repeater-1 {
+    grid-auto-columns: calc(100% - 0px);
+    grid-template-columns: 100%;
+  }
+
+  .u-section-2 .u-repeater-2 {
+    grid-auto-columns: calc(100% - 0px);
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-repeater-1 {
+    grid-auto-columns: 100%;
+  }
+
+  .u-section-2 .u-repeater-2 {
+    grid-auto-columns: 100%;
+  }
+
+  .u-section-2 .u-container-layout-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
