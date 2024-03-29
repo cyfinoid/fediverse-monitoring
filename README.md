@@ -14,8 +14,13 @@ This project gathers up the following statistics of fediverse:
 - Daily comments count
 
 ## Setup 
+As of now this project runs only on local environment.
+- Step up PostgresSQL in your local environment
+- ```
+  werw4
+  ```
 
-#### Languages and frameworks used:
+### Languages and frameworks used:
 - Golang
 - HTML
 - CSS
