@@ -16,8 +16,13 @@ This project gathers up the following statistics of fediverse:
 ## Setup 
 As of now this project runs only on local environment.
 - Step up PostgresSQL in your local environment
-- ```
-  werw4
+- Run the server
+  ```
+  go run server.go
+  ```
+- If running for the first time or want to update database, update Fediverse database by
+  ```
+  go run fediverse/main.go
   ```
 
 ### Languages and frameworks used:
@@ -25,4 +30,4 @@ As of now this project runs only on local environment.
 - HTML
 - CSS
 - Chart.js
-- PostgresSQl
+- PostgresSQL
