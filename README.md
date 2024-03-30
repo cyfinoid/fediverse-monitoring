@@ -24,6 +24,8 @@ As of now this project runs only on local environment.
   ```
   go run fediverse/main.go
   ```
+  Database is being updated by cocurrently gathering up data through API calls. Semaphores are being used (a concurrency control mechanism that limits the number of threads that can 
+  access a resource or a group of resources concurrently, in this case 25 goroutines are maintained) to collect API data and store in postgres.
 
 ### Languages and frameworks used:
 - Golang
