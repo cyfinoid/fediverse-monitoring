@@ -14,19 +14,20 @@ This project gathers up the following statistics of fediverse:
 - Daily comments count
 
 ## Requirements:
-- Step up PostgresSQL in your local environment (Change constants like username, password in db.go)
+- Step up PostgresSQL in your local environment (Change constants like username, password in db.go) // specify line number
 
 ## Setup 
-- Run the server
-  ```
-  go run server.go
-  ```
 - If running for the first time or want to update database, update Fediverse database by
   ```
   go run fediverse/main.go
   ```
   Database is being updated by cocurrently gathering up data through API calls. Semaphores are being used (a concurrency control mechanism that limits the number of threads that can 
-  access a resource or a group of resources concurrently, in this case 25 goroutines are maintained) to collect API data and store in postgres.
+  access a resource or a group of resources concurrently, in this case 25 goroutines are maintained) to collect API data and store in postgres. // mention numWorkers
+
+- Run the server
+  ```
+  go run server.go
+  ```
 
 ### Languages and frameworks used:
 - Golang
