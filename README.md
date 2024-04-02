@@ -28,10 +28,13 @@ This project gathers up the following statistics of fediverse:
   ```
   go run server.go
   ```
-
+// include ss 
 ### Languages and frameworks used:
 - Golang
 - HTML
 - CSS
 - Chart.js
 - PostgresSQL
+
+// contributors
+
