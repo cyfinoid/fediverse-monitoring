@@ -23,7 +23,8 @@ This project gathers up the following statistics of fediverse:
   ```
   Database is being updated by cocurrently gathering up data through API calls. Semaphores are being used (a concurrency control mechanism that limits the number of threads that can 
   access a resource or a group of resources concurrently, in this case 25 goroutines are maintained) to collect API data and store in postgres. // mention numWorkers
-
+  // time taken to update
+  
 - Run the server
   ```
   go run server.go
