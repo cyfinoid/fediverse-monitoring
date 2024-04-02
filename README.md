@@ -14,7 +14,7 @@ This project gathers up the following statistics of fediverse:
 - Daily comments count
 
 ## Requirements:
-- Step up PostgresSQL in your local environment
+- Step up PostgresSQL in your local environment (Change constants like username, password in db.go)
 
 ## Setup 
 - Run the server
