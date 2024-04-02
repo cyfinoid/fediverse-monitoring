@@ -13,9 +13,10 @@ This project gathers up the following statistics of fediverse:
 - Daily posts count
 - Daily comments count
 
-## Setup 
-As of now this project runs only on local environment.
+## Requirements:
 - Step up PostgresSQL in your local environment
+
+## Setup 
 - Run the server
   ```
   go run server.go
