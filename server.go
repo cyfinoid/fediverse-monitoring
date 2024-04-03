@@ -10,7 +10,11 @@ import (
 )
 
 func main() {
-	Db.Connect("dailygrowth")
+	err := Db.Connect()
+	if err != nil {
+		fmt.Println("Couldn't connect to Postgres DB")
+		return
+	}
 
 	r := gin.Default()
 
@@ -144,7 +148,7 @@ func main() {
 		c.Header("Content-Type", "application/json")
 		c.Writer.Write(j)
 	})
-	
+
 	r.Run()
 
 }

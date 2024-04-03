@@ -14,7 +14,17 @@ This project gathers up the following statistics of fediverse:
 - Daily comments count
 
 ## Requirements:
-- Step up PostgresSQL in your local environment (Change constants like username, password in db.go) // specify line number
+- Step up PostgresSQL in your local environment (Change constants like username, password, Database name in DB/db.go at Line 12)
+  ```
+  const (
+	  host     = "localhost"
+	  port     = 5432
+	  user     = "postgres"
+	  password = "postgres"
+	  dbname	 = "dailygrowth"
+  )
+  ``` 
+
 
 ## Setup 
 - If running for the first time or want to update database, update Fediverse database by
@@ -22,20 +32,32 @@ This project gathers up the following statistics of fediverse:
   go run fediverse/main.go
   ```
   Database is being updated by cocurrently gathering up data through API calls. Semaphores are being used (a concurrency control mechanism that limits the number of threads that can 
-  access a resource or a group of resources concurrently, in this case 25 goroutines are maintained) to collect API data and store in postgres. // mention numWorkers
-  // time taken to update
+  access a resource or a group of resources concurrently, in this case 25 goroutines are maintained) to collect API data and store in postgres.
+  *Number of goroutines spawned can be customized at Line 60 in Fediverse/main.go*
+  ```
+  numWorkers := 25 //no. of goroutines
+  ```
+  *Average time taken to update the database varies from 0.5 hour to 1 hour (depending on the number of goroutines spawned). NOTE: Keep "numWorkers" up to the limit that it doesn't cause IO overhead while making API calls*
   
-- Run the server
+- Run the server and open http://localhost:8080/
   ```
   go run server.go
   ```
-// include ss 
-### Languages and frameworks used:
+
+## Screenshots
+![fedi_stats](/ss/1.png?raw=true "fedi_stats 1")
+![fedi_stats](/ss/2.png?raw=true "fedi_stats 2")
+
+## Languages and frameworks used:
 - Golang
 - HTML
 - CSS
 - Chart.js
 - PostgresSQL
 
-// contributors
+### Contributors
 
+- Vansh Bulani (Internship project at Cyfinoid Research)
+  [Checkout my portfolio](https://www.vanshbulani.info)
+  [Checkout my blog about this project](https://www.vanshbulani.info/blogs)
+  [LinkedIn](https://www.linkedin.com/in/vanshbulani/)

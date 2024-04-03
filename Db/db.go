@@ -14,12 +14,13 @@ const (
 	port     = 5432
 	user     = "postgres"
 	password = "postgres"
+	dbname	 = "dailygrowth"
 )
 
 var db *sql.DB
 var err error
 
-func Connect(dbname string) error {
+func Connect() error {
 
 	psqlconn := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
 

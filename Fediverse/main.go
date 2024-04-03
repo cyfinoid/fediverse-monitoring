@@ -58,6 +58,7 @@ func main() {
 	uniqueKeys := make(map[string]bool)
 
 	numWorkers := 25 //no. of goroutines
+	
 	j := 0
 
 	workerCh := make(chan struct{}, numWorkers)
