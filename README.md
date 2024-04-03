@@ -57,7 +57,7 @@ This project gathers up the following statistics of fediverse:
 
 ### Contributors
 
-- Vansh Bulani (Internship project at Cyfinoid Research) \n
-  [Checkout my portfolio](https://www.vanshbulani.info) \n
-  [Checkout my blog about this project](https://www.vanshbulani.info/blogs) \n
-  [LinkedIn](https://www.linkedin.com/in/vanshbulani/)
+- Vansh Bulani (Internship project at Cyfinoid Research)  
+  [Checkout my portfolio](https://www.vanshbulani.info)  
+  [Checkout my blog about this project](https://www.vanshbulani.info/blogs)  
+  [LinkedIn](https://www.linkedin.com/in/vanshbulani/)  
